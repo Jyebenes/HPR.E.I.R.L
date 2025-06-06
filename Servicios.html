@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios - HPR Montajes y Servicios</title>
+  <link rel="icon" href="Imagenes/c16890ebaf1b25e52b5f16c6c7c97636.jpg" />
+  <style>
+    /* Fondo base con imagen */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background-image: url("Trabajador.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: auto;
+      background-color: #000000cc; /* ligera capa oscura para mejor legibilidad */
+      flex-direction: column; /* para que botón quede abajo */
+    }
+
+    /* Capa animada encima del fondo */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        45deg,
+        rgba(255, 99, 71, 0.3),
+        rgba(255, 20, 147, 0.3),
+        rgba(0, 250, 154, 0.3),
+        rgba(255, 215, 0, 0.3)
+      );
+      background-size: 400% 400%;
+      animation: vibrantOverlay 15s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes vibrantOverlay {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .content-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Estilo acordeón */
+    .accordion-item {
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-header {
+      background-color: #ffeb3b;
+      cursor: pointer;
+      padding: 15px 20px;
+      font-weight: bold;
+      user-select: none;
+      position: relative;
+      font-size: 18px;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-header:hover {
+      background-color: #fdd835;
+    }
+
+    .accordion-header::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      font-size: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-header.active::after {
+      content: "−";
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      background-color: #fff;
+      padding: 0 20px;
+    }
+
+    .accordion-content.open {
+      padding: 15px 20px 20px 20px;
+    }
+
+    .accordion-content p {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .accordion-content img {
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    /* Scrollbar para el container */
+    .content-container::-webkit-scrollbar {
+      width: 8px;
+    }
+    .content-container::-webkit-scrollbar-thumb {
+      background: #ff6347;
+      border-radius: 4px;
+    }
+    .content-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Estilo botón regresar */
+    .back-button-container {
+      margin-bottom: 30px;
+    }
+
+    .highlight-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 3px 8px rgba(255, 99, 71, 0.6);
+    }
+
+    .highlight-link:hover {
+      background-color: #e5533d;
+      box-shadow: 0 5px 12px rgba(229, 83, 61, 0.8);
+    }
+     
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <h1>Servicios</h1>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Realizamos Fabricación de Piping para la interconexión de tanques</div>
+      <div class="accordion-content">
+        <img src="Imagen6.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen7.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen8.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen9.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen10.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen11.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen12.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen13.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen14.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen15.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen16.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen17.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen18.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen19.jpg" alt="Fabricación de Piping" />
+        <img src="Imagen24.jpg" alt="Fabricación de Piping" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Apoyo para inspección Exterior TC8 Tanques Enex La Greda</div>
+      <div class="accordion-content">
+        <img src="Imagen27.jpg" alt="Inspección Tanques" />
+        <img src="Imagen28.jpg" alt="Inspección Tanques" />
+        <img src="Imagen29.jpg" alt="Inspección Tanques" />
+        <img src="Imagen30.jpg" alt="Inspección Tanques" />
+        <img src="Imagen31.jpg" alt="Inspección Tanques" />
+        <img src="Imagen32.jpg" alt="Inspección Tanques" />
+        <img src="Imagen33.jpg" alt="Inspección Tanques" />
+        <img src="Imagen34.jpg" alt="Inspección Tanques" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Fabricación y montaje de Piping auxiliar para limpieza química de Caldera AES-Gener Ventanas</div>
+      <div class="accordion-content">
+        <img src="IMG (1).jpg" alt="IMG1" />
+        <img src="IMG (2).jpg" alt="Piping auxiliar limpieza química" />
+        <img src="IMG (3).jpg" alt="Piping auxiliar limpieza química" />
+        <img src="IMG (4).jpg" alt="Piping auxiliar limpieza química" />
+        <img src="IMG (5).jpg" alt="Piping auxiliar limpieza química" />
+        <img src="IMG (6).jpg" alt="Piping auxiliar limpieza química" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Suministro, fabricación y Montaje Spools Skid Proyecto Enlace Aeropuerto Punta Arenas ENEX</div>
+      <div class="accordion-content">
+        <img src="MG.jpg" alt="Spools Skid" />
+        <img src="MG2.jpg" alt="Spools Skid" />
+        <img src="MG3.jpg" alt="Spools Skid" />
+        <img src="MG4.jpg" alt="Spools Skid" />
+        <img src="MG5.jpg" alt="Spools Skid" />
+        <img src="MG6.jpg" alt="Spools Skid" />
+        <img src="MG7.jpg" alt="Spools Skid" />
+        <img src="MG8.jpg" alt="Spools Skid" />
+        <img src="MG9.jpg" alt="Spools Skid" />
+        <img src="MG10.jpg" alt="Spools Skid" />
+        <img src="MG11.jpg" alt="Spools Skid" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Retiro y Montaje Serpentín Tanques ENEX La greda</div>
+      <div class="accordion-content">
+        <img src="R.jpg" alt="Serpentín Tanques" />
+        <img src="R2.jpg" alt="Serpentín Tanques" />
+        <img src="R3.jpg" alt="Serpentín Tanques" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Reemplazo línea 3" Sala de Bombas ENEX PVSA</div>
+      <div class="accordion-content">
+        <img src="Q.jpg" alt="Sala de Bombas" />
+        <img src="Q2.jpg" alt="Sala de Bombas" />
+        <img src="Q3.jpg" alt="Sala de Bombas" />
+        <img src="Q4.jpg" alt="Sala de Bombas" />
+        <img src="Q5.jpg" alt="Sala de Bombas" />
+        <img src="Q6.jpg" alt="Sala de Bombas" />
+        <img src="Q7.jpg" alt="Sala de Bombas" />
+        <img src="Q8.jpg" alt="Sala de Bombas" />
+        <img src="Q9.jpg" alt="Sala de Bombas" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Proyecto MURETES Y TAPA CÁMARAS SEPARADORAS ENEX PLANTA LA GREDA</div>
+      <div class="accordion-content">
+        <img src="Imagen65.jpg" alt="Muretes y Tapas" />
+        <img src="Imagen66.jpg" alt="Muretes y Tapas" />
+        <img src="Imagen67.jpg" alt="Muretes y Tapas" />
+        <img src="Imagen68.jpg" alt="Muretes y Tapas" />
+        <img src="Imagen69.jpg" alt="Muretes y Tapas" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Servicio de apoyo Inspección Ondas Guiadas Oleoductos ENEX planta La Greda</div>
+      <div class="accordion-content">
+        <img src="Imagen72.jpg" alt="Inspección Ondas Guiadas" />
+        <img src="Imagen73.jpg" alt="Inspección Ondas Guiadas" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Fabricación y Montaje de línea de 12" en Sala de Bombas ENEX PVSA</div>
+      <div class="accordion-content">
+        <img src="Imagen75.jpg" alt="Línea 12 pulgadas" />
+        <img src="Imagen76.jpg" alt="Línea 12 pulgadas" />
+        <img src="Imagen77.jpg" alt="Línea 12 pulgadas" />
+        <img src="Imagen78.jpg" alt="Línea 12 pulgadas" />
+        <img src="Imagen79.jpg" alt="Línea 12 pulgadas" />
+        <img src="Imagen80.jpg" alt="Línea 12 pulgadas" />
+        <img src="Imagen81.jpg" alt="Línea 12 pulgadas" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Sellado de pretil con soldadura HDPE ENEX Planta la Greda</div>
+      <div class="accordion-content">
+        <img src="Imagen82.jpg" alt="Soldadura HDPE" />
+        <img src="Imagen83.jpg" alt="Soldadura HDPE" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Montaje de Spool 12" en planta</div>
+      <div class="accordion-content">
+        <img src="Imagen84.jpg" alt="Montaje de Spool" />
+        <img src="Imagen85.jpg" alt="Montaje de Spool" />
+        <img src="Imagen86.jpg" alt="Montaje de Spool" />
+        <img src="Imagen87.jpg" alt="Montaje de Spool" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Proyecto Piping auxiliar limpieza química a Caldera y Horno Flash Codelco Chuquicamata</div>
+      <div class="accordion-content">
+        <img src="Imagen88.jpg" alt="Proyecto Codelco" />
+        <img src="Imagen89.jpg" alt="Proyecto Codelco" />
+        <img src="Imagen90.jpg" alt="Proyecto Codelco" />
+        <img src="Imagen91.jpg" alt="Proyecto Codelco" />
+        <img src="Imagen92.jpg" alt="Proyecto Codelco" />
+        <img src="Imagen93.jpg" alt="Proyecto Codelco" />
+        <img src="Imagen94.jpg" alt="Proyecto Codelco" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Proyecto limpieza y reparación TK-2501 ENEX planta La Greda</div>
+      <div class="accordion-content">
+        <img src="Imagen95.jpg" alt="Limpieza y reparación TK-2501" />
+        <img src="Imagen96.jpg" alt="Limpieza y reparación TK-2501" />
+        <img src="Imagen97.jpg" alt="Limpieza y reparación TK-2501" />
+        <img src="Imagen98.jpg" alt="Limpieza y reparación TK-2501" />
+        <img src="Imagen99.jpg" alt="Limpieza y reparación TK-2501" />
+        <img src="Imagen100.jpg" alt="Limpieza y reparación TK-2501" />
+        <img src="Imagen101.jpg" alt="Limpieza y reparación TK-2501" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Proyecto limpieza y reparación TK-2502 ENEX planta La Greda</div>
+      <div class="accordion-content">
+        <img src="Imagen102.jpg" alt="Limpieza y reparación TK-2502" />
+        <img src="Imagen103.jpg" alt="Limpieza y reparación TK-2502" />
+        <img src="Imagen104.jpg" alt="Limpieza y reparación TK-2502" />
+        <img src="Imagen105.jpg" alt="Limpieza y reparación TK-2502" />
+        <img src="Imagen106.jpg" alt="Limpieza y reparación TK-2502" />
+        <img src="Imagen107.jpg" alt="Limpieza y reparación TK-2502" />
+        <img src="Imagen108.jpg" alt="Limpieza y reparación TK-2502" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Proyecto limpieza y reparación TK-25002 ENEX planta La Greda</div>
+      <div class="accordion-content">
+        <img src="Imagen109.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen110.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen111.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen112.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen113.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen114.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen115.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen116.jpg" alt="Limpieza y reparación TK-25002" />
+        <img src="Imagen117.jpg" alt="Limpieza y reparación TK-25002" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Fabricación de plataformas para IBCs ESVAL S.A</div>
+      <div class="accordion-content">
+        <img src="Imagen118.jpg" alt="Plataformas para IBCs" />
+        <img src="Imagen119.jpg" alt="Plataformas para IBCs" />
+        <img src="Imagen120.jpg" alt="Plataformas para IBCs" />
+        <img src="Imagen121.jpg" alt="Plataformas para IBCs" />
+        <img src="Imagen122.jpg" alt="Plataformas para IBCs" />
+        <img src="Imagen123.jpg" alt="Plataformas para IBCs" />
+        <img src="Imagen124.jpg" alt="Plataformas para IBCs" />
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Fabricación de Piping prueba hidrostática Nexxo</div>
+      <div class="accordion-content">
+        <img src="Imagen125.jpg" alt="Prueba hidrostática Piping" />
+        <img src="Imagen126.jpg" alt="Prueba hidrostática Piping" />
+        <img src="Imagen127.jpg" alt="Prueba hidrostática Piping" />
+        <img src="Imagen128.jpg" alt="Prueba hidrostática Piping" />
+        <img src="Imagen129.jpg" alt="Prueba hidrostática Piping" />
+      </div>
+    </div>
+  </div>
+
+  <div class="back-button-container">
+    <a href="Menu.html" class="highlight-link">Regresar al Menú principal</a>
+  </div>
+
+  <script>
+    // Funcionalidad acordeón
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const currentlyActive = document.querySelector('.accordion-header.active');
+        if(currentlyActive && currentlyActive !== header) {
+          currentlyActive.classList.remove('active');
+          currentlyActive.nextElementSibling.style.maxHeight = null;
+          currentlyActive.nextElementSibling.classList.remove('open');
+        }
+        header.classList.toggle('active');
+        const accordionContent = header.nextElementSibling;
+        if(header.classList.contains('active')) {
+          accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+          accordionContent.classList.add('open');
+        } else {
+          accordionContent.style.maxHeight = null;
+          accordionContent.classList.remove('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

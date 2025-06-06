@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la Empresa</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fuente moderna */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+
+            background-image: url("Fondo1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-shadow: 1px 1px 4px #000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.88);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .content p {
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .content h2 {
+            color: #2c7a7b;
+            font-size: 1.6em;
+            margin-top: 40px;
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 20px;
+            font-size: 1.05em;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Galería */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            font-size: 0.95em;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-link {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #FF6347;
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .highlight-link:hover {
+            background-color: #FF4500;
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Información de la Empresa</h1>
+    </header>
+
+    <div class="content">
+        <p>
+            Contamos con taller propio para la fabricación y reparación de nuestros trabajos, 
+            así como todo el equipo necesario para trasladarnos a terreno e instalar nuestros proyectos.
+        </p>
+
+        <div class="gallery">
+            <img src="Taller propio 2.jpg" alt="Taller propio 2">
+            <img src="TALLER propio.jpg" alt="Taller propio">
+        </div>
+
+        <h2>Clientes Principales</h2>
+        <ul>
+            <li>Simta Ingeniería SPA</li>
+            <li>Erres Limitada</li>
+            <li>Maquinarias e Inversiones Freemaq SPA</li>
+            <li>Ferrostaal Chile S.A.C.</li>
+            <li>Nexxo S.A.</li>
+            <li>Enex S.A.</li>
+            <li>ESVAL S.A.</li>
+            <li>PVSA</li>
+        </ul>
+
+        <h2>Nuestros Trabajos</h2>
+        <p>Fabricación de abrazaderas y adaptadores para máquina Tapping.</p>
+
+        <div class="gallery">
+            <img src="Imagen1.jpg" alt="Fabricación de abrazaderas">
+            <img src="Imagen2.jpg" alt="Fabricación de adaptador">
+        </div>
+
+        <p>
+            Realizamos soldaduras especiales en aluminio y acero inoxidable.
+        </p>
+        <p>
+            Tipos de materiales: acero carbono (fierro) y fierro fundido.
+        </p>
+
+        <div class="gallery">
+            <img src="Imagen3.jpg" alt="Soldadura en aluminio">
+            <img src="Imagen4.jpg" alt="Soldadura en acero">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HPR MONTAJES Y SERVICIOS E.I.R.L. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="Menu.html" class="highlight-link">Regresar al Menú principal</a>
+</body>
+</html>
